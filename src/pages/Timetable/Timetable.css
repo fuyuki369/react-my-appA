@@ -1,0 +1,74 @@
+
+/*過去・現在ボタンタブ*/
+
+.timetable-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.timetable-tabs button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.timetable-tabs button.active {
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+}
+
+/*時間割表*/
+
+.timetable-container {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+.timetable {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    height: 60px;
+}
+
+.timetable th {
+    background-color: #f0f0f0;
+}
+
+.timetable-cell {
+    background-color: #fff;
+}
+
+
+/*モーダル表示*/
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 300px;
+}
